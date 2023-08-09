@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F80E8F6F2A84768C00639991 /* LintCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E8F6E2A84768C00639991 /* LintCommand.swift */; };
+		F8B924C72A842E2200B60EA9 /* PrettySwift_for_XcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B924C62A842E2200B60EA9 /* PrettySwift_for_XcodeApp.swift */; };
+		F8B924C92A842E2200B60EA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B924C82A842E2200B60EA9 /* ContentView.swift */; };
+		F8B924CB2A842E2300B60EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B924CA2A842E2300B60EA9 /* Assets.xcassets */; };
+		F8B924CE2A842E2300B60EA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B924CD2A842E2300B60EA9 /* Preview Assets.xcassets */; };
+		F8B924DC2A842E3B00B60EA9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B924DB2A842E3B00B60EA9 /* Cocoa.framework */; };
+		F8B924E12A842E3B00B60EA9 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B924E02A842E3B00B60EA9 /* SourceEditorExtension.swift */; };
+		F8B924E32A842E3B00B60EA9 /* FormatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B924E22A842E3B00B60EA9 /* FormatCommand.swift */; };
+		F8B924E82A842E3B00B60EA9 /* PrettySwift.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8B924D92A842E3B00B60EA9 /* PrettySwift.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8B924ED2A842E5E00B60EA9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */; };
+		F8B924EE2A842E5E00B60EA9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8B924F22A8430B600B60EA9 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F12A8430B600B60EA9 /* SwiftFormat */; };
+		F8B924F42A8430B600B60EA9 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F32A8430B600B60EA9 /* SwiftFormatConfiguration */; };
+		F8B924F62A8433D900B60EA9 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F52A8433D900B60EA9 /* SwiftFormat */; };
+		F8B924F82A8433D900B60EA9 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F72A8433D900B60EA9 /* SwiftFormatConfiguration */; };
+		F8C7C7A72A85911800BC2465 /* PrettySwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7C7A62A85911800BC2465 /* PrettySwiftError.swift */; };
+		F8C7C7A92A85913600BC2465 /* PrettySwiftOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7C7A82A85913600BC2465 /* PrettySwiftOutputStream.swift */; };
+		F8C7C7AB2A85917800BC2465 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C7C7AA2A85917800BC2465 /* Shared.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8B924E62A842E3B00B60EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8B924BB2A842E2200B60EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8B924D82A842E3B00B60EA9;
+			remoteInfo = PrettySwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8B924EC2A842E3B00B60EA9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8B924E82A842E3B00B60EA9 /* PrettySwift.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B924EF2A842E5E00B60EA9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8B924EE2A842E5E00B60EA9 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F80E8F6E2A84768C00639991 /* LintCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCommand.swift; sourceTree = "<group>"; };
+		F8B924C32A842E2200B60EA9 /* PrettySwift for Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PrettySwift for Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B924C62A842E2200B60EA9 /* PrettySwift_for_XcodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettySwift_for_XcodeApp.swift; sourceTree = "<group>"; };
+		F8B924C82A842E2200B60EA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8B924CA2A842E2300B60EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8B924CD2A842E2300B60EA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8B924CF2A842E2300B60EA9 /* PrettySwift_for_Xcode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrettySwift_for_Xcode.entitlements; sourceTree = "<group>"; };
+		F8B924D92A842E3B00B60EA9 /* PrettySwift.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrettySwift.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B924DB2A842E3B00B60EA9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8B924E02A842E3B00B60EA9 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		F8B924E22A842E3B00B60EA9 /* FormatCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatCommand.swift; sourceTree = "<group>"; };
+		F8B924E42A842E3B00B60EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B924E52A842E3B00B60EA9 /* PrettySwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrettySwift.entitlements; sourceTree = "<group>"; };
+		F8C7C7A62A85911800BC2465 /* PrettySwiftError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettySwiftError.swift; sourceTree = "<group>"; };
+		F8C7C7A82A85913600BC2465 /* PrettySwiftOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettySwiftOutputStream.swift; sourceTree = "<group>"; };
+		F8C7C7AA2A85917800BC2465 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8B924C02A842E2200B60EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B924F42A8430B600B60EA9 /* SwiftFormatConfiguration in Frameworks */,
+				F8B924F22A8430B600B60EA9 /* SwiftFormat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B924D62A842E3B00B60EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B924DC2A842E3B00B60EA9 /* Cocoa.framework in Frameworks */,
+				F8B924F62A8433D900B60EA9 /* SwiftFormat in Frameworks */,
+				F8B924F82A8433D900B60EA9 /* SwiftFormatConfiguration in Frameworks */,
+				F8B924ED2A842E5E00B60EA9 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8B924BA2A842E2200B60EA9 = {
+			isa = PBXGroup;
+			children = (
+				F8B924C52A842E2200B60EA9 /* PrettySwift for Xcode */,
+				F8B924DF2A842E3B00B60EA9 /* PrettySwift */,
+				F8B924DA2A842E3B00B60EA9 /* Frameworks */,
+				F8B924C42A842E2200B60EA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8B924C42A842E2200B60EA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8B924C32A842E2200B60EA9 /* PrettySwift for Xcode.app */,
+				F8B924D92A842E3B00B60EA9 /* PrettySwift.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8B924C52A842E2200B60EA9 /* PrettySwift for Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				F8B924C62A842E2200B60EA9 /* PrettySwift_for_XcodeApp.swift */,
+				F8B924C82A842E2200B60EA9 /* ContentView.swift */,
+				F8B924CA2A842E2300B60EA9 /* Assets.xcassets */,
+				F8B924CF2A842E2300B60EA9 /* PrettySwift_for_Xcode.entitlements */,
+				F8B924CC2A842E2300B60EA9 /* Preview Content */,
+			);
+			path = "PrettySwift for Xcode";
+			sourceTree = "<group>";
+		};
+		F8B924CC2A842E2300B60EA9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8B924CD2A842E2300B60EA9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8B924DA2A842E3B00B60EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8B924DB2A842E3B00B60EA9 /* Cocoa.framework */,
+				F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8B924DF2A842E3B00B60EA9 /* PrettySwift */ = {
+			isa = PBXGroup;
+			children = (
+				F8C7C7AA2A85917800BC2465 /* Shared.swift */,
+				F8C7C7A62A85911800BC2465 /* PrettySwiftError.swift */,
+				F8C7C7A82A85913600BC2465 /* PrettySwiftOutputStream.swift */,
+				F8B924E02A842E3B00B60EA9 /* SourceEditorExtension.swift */,
+				F8B924E22A842E3B00B60EA9 /* FormatCommand.swift */,
+				F80E8F6E2A84768C00639991 /* LintCommand.swift */,
+				F8B924E42A842E3B00B60EA9 /* Info.plist */,
+				F8B924E52A842E3B00B60EA9 /* PrettySwift.entitlements */,
+			);
+			path = PrettySwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8B924C22A842E2200B60EA9 /* PrettySwift for Xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B924D22A842E2300B60EA9 /* Build configuration list for PBXNativeTarget "PrettySwift for Xcode" */;
+			buildPhases = (
+				F8B924BF2A842E2200B60EA9 /* Sources */,
+				F8B924C02A842E2200B60EA9 /* Frameworks */,
+				F8B924C12A842E2200B60EA9 /* Resources */,
+				F8B924EC2A842E3B00B60EA9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8B924E72A842E3B00B60EA9 /* PBXTargetDependency */,
+			);
+			name = "PrettySwift for Xcode";
+			packageProductDependencies = (
+				F8B924F12A8430B600B60EA9 /* SwiftFormat */,
+				F8B924F32A8430B600B60EA9 /* SwiftFormatConfiguration */,
+			);
+			productName = "PrettySwift for Xcode";
+			productReference = F8B924C32A842E2200B60EA9 /* PrettySwift for Xcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8B924D82A842E3B00B60EA9 /* PrettySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B924E92A842E3B00B60EA9 /* Build configuration list for PBXNativeTarget "PrettySwift" */;
+			buildPhases = (
+				F8B924D52A842E3B00B60EA9 /* Sources */,
+				F8B924D62A842E3B00B60EA9 /* Frameworks */,
+				F8B924D72A842E3B00B60EA9 /* Resources */,
+				F8B924EF2A842E5E00B60EA9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrettySwift;
+			packageProductDependencies = (
+				F8B924F52A8433D900B60EA9 /* SwiftFormat */,
+				F8B924F72A8433D900B60EA9 /* SwiftFormatConfiguration */,
+			);
+			productName = PrettySwift;
+			productReference = F8B924D92A842E3B00B60EA9 /* PrettySwift.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8B924BB2A842E2200B60EA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F8B924C22A842E2200B60EA9 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F8B924D82A842E3B00B60EA9 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F8B924BE2A842E2200B60EA9 /* Build configuration list for PBXProject "PrettySwift for Xcode" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8B924BA2A842E2200B60EA9;
+			packageReferences = (
+				F8B924F02A8430B600B60EA9 /* XCRemoteSwiftPackageReference "swift-format" */,
+			);
+			productRefGroup = F8B924C42A842E2200B60EA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8B924C22A842E2200B60EA9 /* PrettySwift for Xcode */,
+				F8B924D82A842E3B00B60EA9 /* PrettySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8B924C12A842E2200B60EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B924CE2A842E2300B60EA9 /* Preview Assets.xcassets in Resources */,
+				F8B924CB2A842E2300B60EA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B924D72A842E3B00B60EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8B924BF2A842E2200B60EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B924C92A842E2200B60EA9 /* ContentView.swift in Sources */,
+				F8B924C72A842E2200B60EA9 /* PrettySwift_for_XcodeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B924D52A842E3B00B60EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C7C7AB2A85917800BC2465 /* Shared.swift in Sources */,
+				F8C7C7A72A85911800BC2465 /* PrettySwiftError.swift in Sources */,
+				F8B924E12A842E3B00B60EA9 /* SourceEditorExtension.swift in Sources */,
+				F80E8F6F2A84768C00639991 /* LintCommand.swift in Sources */,
+				F8B924E32A842E3B00B60EA9 /* FormatCommand.swift in Sources */,
+				F8C7C7A92A85913600BC2465 /* PrettySwiftOutputStream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8B924E72A842E3B00B60EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8B924D82A842E3B00B60EA9 /* PrettySwift */;
+			targetProxy = F8B924E62A842E3B00B60EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8B924D02A842E2300B60EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8B924D12A842E2300B60EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F8B924D32A842E2300B60EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "PrettySwift for Xcode/PrettySwift_for_Xcode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrettySwift for Xcode/Preview Content\"";
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PrettySwift;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8B924D42A842E2300B60EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "PrettySwift for Xcode/PrettySwift_for_Xcode.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrettySwift for Xcode/Preview Content\"";
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PrettySwift;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F8B924EA2A842E3B00B60EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrettySwift/PrettySwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrettySwift/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrettySwift;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode.PrettySwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8B924EB2A842E3B00B60EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrettySwift/PrettySwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrettySwift/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrettySwift;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode.PrettySwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8B924BE2A842E2200B60EA9 /* Build configuration list for PBXProject "PrettySwift for Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B924D02A842E2300B60EA9 /* Debug */,
+				F8B924D12A842E2300B60EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B924D22A842E2300B60EA9 /* Build configuration list for PBXNativeTarget "PrettySwift for Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B924D32A842E2300B60EA9 /* Debug */,
+				F8B924D42A842E2300B60EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B924E92A842E3B00B60EA9 /* Build configuration list for PBXNativeTarget "PrettySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B924EA2A842E3B00B60EA9 /* Debug */,
+				F8B924EB2A842E3B00B60EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8B924F02A8430B600B60EA9 /* XCRemoteSwiftPackageReference "swift-format" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-format.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 508.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8B924F12A8430B600B60EA9 /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B924F02A8430B600B60EA9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormat;
+		};
+		F8B924F32A8430B600B60EA9 /* SwiftFormatConfiguration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B924F02A8430B600B60EA9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormatConfiguration;
+		};
+		F8B924F52A8433D900B60EA9 /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B924F02A8430B600B60EA9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormat;
+		};
+		F8B924F72A8433D900B60EA9 /* SwiftFormatConfiguration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B924F02A8430B600B60EA9 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormatConfiguration;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F8B924BB2A842E2200B60EA9 /* Project object */;
+}
