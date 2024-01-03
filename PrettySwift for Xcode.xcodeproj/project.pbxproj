@@ -17,7 +17,7 @@
 		F8B924E32A842E3B00B60EA9 /* FormatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B924E22A842E3B00B60EA9 /* FormatCommand.swift */; };
 		F8B924E82A842E3B00B60EA9 /* PrettySwift.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8B924D92A842E3B00B60EA9 /* PrettySwift.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F8B924ED2A842E5E00B60EA9 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */; };
-		F8B924EE2A842E5E00B60EA9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8B924EE2A842E5E00B60EA9 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8B924DD2A842E3B00B60EA9 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8B924F22A8430B600B60EA9 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F12A8430B600B60EA9 /* SwiftFormat */; };
 		F8B924F42A8430B600B60EA9 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F32A8430B600B60EA9 /* SwiftFormatConfiguration */; };
 		F8B924F62A8433D900B60EA9 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = F8B924F52A8433D900B60EA9 /* SwiftFormat */; };
@@ -225,7 +225,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					F8B924C22A842E2200B60EA9 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -343,9 +343,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -403,9 +405,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -434,6 +438,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PrettySwift for Xcode/Preview Content\"";
 				DEVELOPMENT_TEAM = HRQ4JSNN38;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -446,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -465,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PrettySwift for Xcode/Preview Content\"";
 				DEVELOPMENT_TEAM = HRQ4JSNN38;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -477,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -493,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = HRQ4JSNN38;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -504,7 +511,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode.PrettySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -521,6 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = HRQ4JSNN38;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -532,7 +540,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tonycoco.PrettySwift.PrettySwift-for-Xcode.PrettySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

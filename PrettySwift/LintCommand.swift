@@ -15,8 +15,8 @@ class LintCommand: NSObject, XCSourceEditorCommand {
     with invocation: XCSourceEditorCommandInvocation,
     completionHandler: @escaping (Error?) -> Void
   ) {
-    guard supportedContentUTIs.contains(invocation.buffer.contentUTI) else {
-      return completionHandler(PrettySwiftError.notSwift)
+    if !supportedContentUTIs.contains(invocation.buffer.contentUTI) {
+      return completionHandler(nil)
     }
 
     let input = invocation.buffer.completeBuffer

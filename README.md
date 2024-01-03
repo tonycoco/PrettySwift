@@ -6,7 +6,7 @@ PrettySwift is a Xcode Source Editor Extension that formats and lints your Swift
 
 To install PrettySwift for Xcode, download it from the Mac App Store. Then, open the app and follow the instructions.
 
-[![Download on the Mac App Store](https://developer.apple.com/assets/elements/icons/download-on-the-mac-app-store/download-on-the-mac-app-store.svg)](https://apps.apple.com/us/app/prettyswift-for-xcode/id6465455455)
+[![Download on the Mac App Store](https://developer.apple.com/assets/elements/icons/download-on-the-mac-app-store/download-on-the-mac-app-store.svg)](https://apps.apple.com/app/prettyswift-for-xcode/id6465455455)
 
 ## Usage
 
