@@ -23,6 +23,7 @@ class FormatCommand: NSObject, XCSourceEditorCommand {
     let config = Configuration()
     let formatter = SwiftFormatter(configuration: config)
     var stream = PrettySwiftOutputStream()
+    let originalSelections = invocation.buffer.selections as! [XCSourceTextRange]
 
     do {
       try formatter.format(source: input, assumingFileURL: nil, to: &stream)
@@ -38,7 +39,10 @@ class FormatCommand: NSObject, XCSourceEditorCommand {
 
     invocation.buffer.completeBuffer = output ?? input
 
-    // TODO: Reset cursor positon.
+    invocation.buffer.selections.removeAllObjects()
+    for selection in originalSelections {
+      invocation.buffer.selections.add(selection)
+    }
 
     return completionHandler(nil)
   }
